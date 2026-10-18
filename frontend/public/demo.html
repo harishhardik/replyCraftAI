@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReplyCraft — Live Chat Demo</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #25233a;
+      background: #f7f5ff;
+    }
+
+    header {
+      padding: 22px 8%;
+      background: white;
+      border-bottom: 1px solid #e9e4f7;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 80px auto;
+      padding: 24px;
+    }
+
+    .eyebrow {
+      color: #6d4aff;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 13px;
+    }
+
+    h1 {
+      font-size: clamp(34px, 6vw, 56px);
+      margin: 14px 0;
+    }
+
+    p {
+      color: #66627b;
+      line-height: 1.7;
+    }
+
+    .card {
+      margin-top: 28px;
+      padding: 24px;
+      background: white;
+      border: 1px solid #e9e4f7;
+      border-radius: 16px;
+    }
+
+    .hint {
+      font-size: 14px;
+      background: #f0ebff;
+      border-radius: 10px;
+      padding: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>QuickFix Repairs</header>
+
+  <main>
+    <div class="eyebrow">ReplyCraft Widget Demo</div>
+    <h1>How can we help you today?</h1>
+    <p>
+      Welcome to QuickFix Repairs. Our customer support assistant
+      can answer questions about our services, opening hours, and
+      booking policies.
+    </p>
+
+    <section class="card">
+      <h2>Customer support</h2>
+      <p>
+        Use the chat button in the bottom-right corner to ask a question.
+        This demo uses your local ReplyCraft backend and Ollama model.
+      </p>
+      <div class="hint">
+        Try asking: “What are your opening hours?” or
+        “Do you repair laptops?”
+      </div>
+    </section>
+  </main>
+
+  <script
+    src="/widget.js"
+    data-api-url="http://localhost:8000"
+    data-business-name="QuickFix Repairs"
+    data-business-knowledge="Business: QuickFix Repairs. Services: laptop repair, desktop repair, virus removal, and hardware diagnostics. Opening hours: Monday to Saturday, 9 AM to 6 PM. Sunday: closed. Booking: customers should contact the shop to confirm availability. Prices: not provided; do not guess prices. Contact: use the shop's official contact channel.">
+  </script>
+</body>
+</html>
